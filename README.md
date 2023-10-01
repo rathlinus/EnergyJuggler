@@ -4,8 +4,7 @@ Arduino Stomnetz Simulator
 
 Arduino Mega2560
 
----
-Pinout
+### Pinout
 
 Poti1 (A0) Erneuerbare
 
