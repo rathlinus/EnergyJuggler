@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyJuggler</title>
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <script type="text/javascript" src="app.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
+</head>
+<body>
+    
+    <button class="button" id="connect">Connect to Arduino</button>
+    <div id="output"></div>
+    <div class="bar-container" id="bar-container">
+        <div id="barwrapper1" class="barwrapper">
+            <h1 class="title">Erneuerbare</h1>
+            <div id="bar1" class="bar"></div>
+            <div id="bar1b" class="bar"></div>
+        </div>
+        <div id="barwrapper2" class="barwrapper">
+            <h1 class="title">Fossile</h1>
+            <div id="bar2" class="bar"></div>
+            <div id="bar2b" class="bar"></div>
+        </div>
+        <div id="barwrapper3" class="barwrapper">
+            <h1 class="title">Speicher</h1>
+            <div id="bar3" class="bar"></div>
+            <div id="bar3a" class="bar"></div>
+            <div id="bar3b" class="bar"></div>
+            <div id="bar3b1" class="bar"></div>
+            <div id="bar3b2" class="bar"></div>
+        </div>
+        <div id="barwrapper4" class="barwrapper">
+            <div id="bar4" class="bar"></div>
+        </div>
+        <div id="barwrapper5" class="barwrapper">
+            <h1 class="title">Speicherstand</h1>
+            <div id="bar5" class="bar"></div>
+        </div>
+    </div>
+    <div id="chartwrapper">
+    <canvas id="chart"></canvas>
+    </div>
+
+    <div id="blackoutScreen">
+        <div id="blackoutwrapper">
+            <div id="blackouttitle">Du hast einen Blackout verursacht.</div>
+            <img id="blackoutImage" src="img/blackout.png" alt="Blackout Image" />
+            <button id="restart" onclick="restartSystem()">Erneut versuchen</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
