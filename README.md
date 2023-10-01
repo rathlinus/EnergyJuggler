@@ -1,7 +1,9 @@
 # EnergyJuggler
 Arduino Stomnetz Simulator
 
+
 Arduino Mega2560
+
 
 Poti1 (A0) Erneuerbare
 
